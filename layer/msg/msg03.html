@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../static/layui/layui.js"></script>
+</head>
+<script>
+    // 提示框关闭后引入事件, 修改默认时间
+    layui.use(['layer'], function(){
+        layer.msg('提示框关闭后引入事件, 修改默认时间', {
+            icon: 1,
+            time: 2000 //2秒关闭（如果不配置，默认是3秒）
+        }, function(){
+            console.log("继续做点什么")
+        }); 
+    })
+</script>
+<body>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="../../static/layui/layui.js"></script>
+</head>
+<script>
+    // 普通信息框,带title 图标， 回调, 点确定关闭
+    layui.use(['layer'], function(){
+        layer.alert('hello', {icon:1, title:'mytitle2'}, function(index){
+            console.log('结束了，该干啥')
+            layer.close(index)
+        })
+    })
+</script>
+<body>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script src="../../static/layui/layui.js"></script>
+</head>
+<script>
+  // 提示层
+  layui.use(['layer'], function () {
+    var index = layer.open({
+      content: 'test'
+    })
+    //拿到的index是一个重要的凭据，它是诸如layer.close(index)等方法的必传参数。
+  })
+</script>
+
+<body>
+</body>
+
+</html>
